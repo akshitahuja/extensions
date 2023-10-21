@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Load New Projects | Freelancer",
+  "version": "1.0",
+  "description": "Automatically loads new projects when there are any.",
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.freelancer.com/search/projects*"
+      ]
+    }
+  ]
+}
